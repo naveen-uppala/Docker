@@ -11,3 +11,6 @@
 5) sudo usermod -a -G docker ec2-user
 
 6) sudo setfacl -m user:ec2-user:rw /var/run/docker.sock
+
+Note: In 6th step make sure you are giving correct username. You can replace the username (ec2-user) based
+on your current logged in user where you want to install docker.
