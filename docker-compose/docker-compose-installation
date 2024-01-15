@@ -1,17 +1,3 @@
-########################## INSTALL DOCKER ###################
-
-1) sudo yum update -y
-
-2) sudo amazon-linux-extras install docker -y
-
-3) sudo service docker start
-
-4) sudo systemctl enable docker
-
-5) sudo setfacl -m user:ec2-user:rw /var/run/docker.sock
-
-6) sudo usermod -a -G docker ec2-user
-
 ########################## INSTALL DOCKER COMPOSE ###################
 
 1) download docker compose
