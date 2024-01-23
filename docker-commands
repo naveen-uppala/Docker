@@ -4,7 +4,7 @@
    Usage: docker pull <image name>
 
 3) docker run  -->  This command is used to create a container from an image
-   Usage: docker run -it -d <image name>
+   Usage: docker run -d --name <container-name> -p <HostPort:containerport> imagename:tag 
 
 4) docker ps  -->  This command is used to list the running containers
 
