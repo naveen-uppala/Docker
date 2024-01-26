@@ -44,3 +44,11 @@
     Usage: docker logs <container-id>
     
 17) docker logout  -->  This command is used to logout from docker hub repository
+
+18) docker run --mount source=[volume_name],destination=[path_in_container] [docker_image]
+
+19) docker volume inspect [volume_name]
+
+20) docker volume list
+
+21) docker volume create [volume_name]
