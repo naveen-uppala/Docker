@@ -1,0 +1,16 @@
+# Stage 1: Build Stage
+FROM maven:3.8.4-openjdk-17-slim AS build
+WORKDIR /app
+COPY . /app
+RUN mvn clean install
+
+# Stage 2: Runtime Stage
+FROM amazoncorretto:17
+COPY --from=build /app/target/customer-0.0.1.jar /
+EXPOSE 8081
+
+# Define the default entry point
+ENTRYPOINT ["java", "-jar"]
+
+# Define the default argument to be passed to the entry point
+CMD ["customer-0.0.1.jar"]
