@@ -21,7 +21,7 @@ sudo usermod -a -G docker ec2-user
 sudo setfacl -m user:ec2-user:rw /var/run/docker.sock
 ```
 ```
-sudo service docker status  or systemctl status docker
+sudo service docker status 
 ```
 Note: In 5th and 6th step make sure you are giving correct username. You can replace the username (ec2-user) based
 on your current logged in user where you want to install docker.
