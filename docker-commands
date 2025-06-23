@@ -45,10 +45,12 @@
     
 17) docker logout  -->  This command is used to logout from docker hub repository
 
-18) docker run --mount source=[volume_name],destination=[path_in_container] [docker_image]
+18) docker run --mount source=[volume_name],destination=[path_in_container] [docker_image]  --> Mount a volume to a docker container
 
-19) docker volume inspect [volume_name]
+19) docker volume inspect [volume_name]  -->  To display detailed information about a specific Docker volume in JSON format.
 
-20) docker volume list
+20) docker volume list  --> Lists all Docker volumes currently on your system
 
-21) docker volume create [volume_name]
+21) docker volume create [volume_name]  --> creates a new named Docker volume that can be used to store persistent data for containers
+
+22) docker system prune -af --> Can delete data you might want to keep (like unused images or volumes)
