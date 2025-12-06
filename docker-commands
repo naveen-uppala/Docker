@@ -45,7 +45,9 @@
     
 17) docker logout  -->  This command is used to logout from docker hub repository
 
-18) docker run --mount source=[volume_name],destination=[path_in_container] [docker_image]  --> Mount a volume to a docker container
+18) docker run -v volume_name:destination_path --name [container_name] [docker_image]  --> Mount a volume to a docker container
+
+   Example: docker run -v v1:/storage --name c1 amazonlinux:latest
 
 19) docker volume inspect [volume_name]  -->  To display detailed information about a specific Docker volume in JSON format.
 
