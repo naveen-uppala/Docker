@@ -51,6 +51,6 @@
 
 20) docker volume list  --> Lists all Docker volumes currently on your system
 
-21) docker volume create [volume_name]  --> creates a new named Docker volume that can be used to store persistent data for containers
+21) docker volume create [volume_name]  --> creates a new Docker volume that can be used to store data for containers
 
 22) docker system prune -af --> Can delete data you might want to keep (like unused images or volumes)
